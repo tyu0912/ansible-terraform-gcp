@@ -1,0 +1,5 @@
+---
+create_containers: 1
+default_container_name: flask-app
+default_container_image: tennisonyu/flask-app
+default_container_command: /start.sh
