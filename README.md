@@ -19,7 +19,11 @@ Parameters:
 5) -i optional parameter of the number of instances to make
 
 4. Run the command below to deploy the API on each instance
-`bash 2_run_ansible.sh `
+`bash 2_run_ansible.sh`
+
+5. After step 4, there should a url provided you can test. Please run that url in your browser
+
+6. If everything looks good, you can use `terraform destroy` to tear down the infrastructure
 
 ## Troubleshooting
 
