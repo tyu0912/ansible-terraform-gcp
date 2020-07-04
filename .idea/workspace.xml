@@ -2,129 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcd13b80-bf75-4ad1-bf2b-ec0b1210b6db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/.github/release-please.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen/main.tf.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen/outputs.tf.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen/variables.tf.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen/versions.tf.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/autogen_modules.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/build/int.cloudbuild.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/build/lint.cloudbuild.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/docs/upgrading-v2.0.0-v3.0.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/docs/upgrading_to_v4.0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/example-app/configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/example-app/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/example-app/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/gcp-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/gke-node-port/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/gke-node-port/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/gke-node-port/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/tls.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/https-gke/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/gceme.sh.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/mig-nat-http-lb/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/gceme.sh.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/gcp-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/mig.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/tls.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-backend-multi-mig-bucket-https-lb/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/gceme.sh.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/mig.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multi-mig-http-lb/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/gceme.sh.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/gcp-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/mig.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/tls.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/multiple-certs/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/gceme.sh.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/mig.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/examples/shared-vpc/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/kitchen.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/modules/dynamic_backends/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/modules/dynamic_backends/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/modules/dynamic_backends/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/modules/dynamic_backends/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/modules/dynamic_backends/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/mig_nat/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/mig_nat/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/mig_nat/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/mig_nat/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_certs/gcp-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_certs/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_certs/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_certs/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_certs/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_mig/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_mig/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_mig/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/fixtures/multi_mig/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/mig_nat/controls/http.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/mig_nat/inspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_certs/controls/https.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_certs/controls/https_asset.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_certs/controls/https_patterns.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_certs/inspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_mig/controls/http.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/integration/multi_mig/inspec.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/iam.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/make_source.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/test/setup/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/gce-lb-http/terraform-google-lb-http-4.1.0/versions.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/modules/modules.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/plugins/darwin_amd64/lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/plugins/darwin_amd64/terraform-provider-google-beta_v3.28.0_x5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.terraform/plugins/darwin_amd64/terraform-provider-google_v3.28.0_x5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_run_terraform.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_run_ansible.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/load_balancing.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_all.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform.tfvars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfvars" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +13,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ansible/vars/default.yml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -142,8 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/variables.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="797">
+              <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/terraform.tfvars">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -166,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ansible/playbook.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
@@ -179,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="365">
+              <first_editor relative-caret-position="378">
                 <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               </first_editor>
               <second_editor />
@@ -216,6 +112,7 @@
         <option value="$PROJECT_DIR$/1_run_terraform.sh" />
         <option value="$PROJECT_DIR$/ansible/playbook.yml" />
         <option value="$PROJECT_DIR$/run_all.sh" />
+        <option value="$PROJECT_DIR$/terraform.tfvars" />
       </list>
     </option>
   </component>
@@ -266,6 +163,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -301,18 +199,18 @@
       <option name="presentableId" value="Default" />
       <updated>1593830652084</updated>
       <workItem from="1593830657539" duration="2434000" />
-      <workItem from="1593892131247" duration="4009000" />
+      <workItem from="1593892131247" duration="4230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6443000" />
+    <option name="totallyTimeSpent" value="6664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3483548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,13 +248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform.tfstate">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -370,16 +261,6 @@
     <entry file="file://$PROJECT_DIR$/load_balancing.tf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="365">
-            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/vars/default.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -392,13 +273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -427,6 +301,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="378">
+            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
