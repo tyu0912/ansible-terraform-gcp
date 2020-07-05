@@ -4,31 +4,45 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 
 ## Steps:
 
+### Install Software:
 1. Install Terraform and Ansible using Homebrew `brew install terraform ansible`
 
-2. On GCP, if you don't have a project, create one according to here: https://cloud.google.com/resource-manager/docs/creating-managing-projects. If you have a project and want to use it here. That's fine as well.
+### Getting SSH Keys:
+1. If you don't have any, you can use `ssh-keygen` to generate a public/private key pair. 
 
-3. Create a GCP service key json file and store it in an appropriate location. You can follow these steps: https://cloud.google.com/iam/docs/creating-managing-service-account-keys
+### Configuring Google Cloud Platform (GCP)
+1. On GCP, if you don't have a project, please create one. If you do have one, it is recommended to create one anyways to start on a clean environment. Note that the project id is important for later steps. To do this, click on the project menu to the right of "Google Cloud Platform" in the header. Then click on "New Project" and follow the instructions. More details can be found here: https://cloud.google.com/resource-manager/docs/creating-managing-projects. 
 
-4. Clone the repo and run the command below to deploy the infrastructure stack:
-`bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c "ansible-terraform-282015-f4561a76bd8d.json" -n 3 -i ansible-terraform-282015`
+2. Create a GCP service key json file and store it in an appropriate location. To do this, on the hamburger menu in the top left of the header, select "IAM & Accounts" then go to "Service Accounts" in the left menu. Once there, click on "Create  Service Account". Either a Owner or Editor role should suffice. The third page can be skipped. Once the account is created, please create the JSON key under the "Action" menu in the table. Note that the final file downloaded is important for next steps. More details can be found here: https://cloud.google.com/iam/docs/creating-managing-service-account-keys
+
+3. If this is your first time, it will also be necessary to enable the Compute Engine API. Go to https://console.cloud.google.com/apis/library/compute.googleapis.com?q=Compute%20E&id=a08439d8-80d6-43f1-af2e-6878251f018d and click Enable
+
+4. If this is your first time, you may also need to login and authorize google SDK <> terraform communication. To do this, install the Google SDK via the instructions here: https://cloud.google.com/sdk/docs/quickstart-macos and then login using this command: `gcloud auth application-default login`
+
+### Running the Repo
+1. Clone the repo
+
+2. If this is your first time, run `terraform init` to download the load balancer module. 
+
+3. Run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
+`bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
 
 Parameters:
-1) -u string of the username to use for the instances
+1) -u string of any username to use for the instances.
 2) -p string of the path of the public key
 3) -q string of the path of the private key
-4) -c string of the path of json credentials file
-5) -i string of the project id to spin up the cluster
+4) -c string of the path of json credentials file for the service account
+5) -i string of the project id
 6) -n integer of instances to make. Default = 2
 7) -z string of the zone of the project. Default = us-west1-b
 8) -r string of the region of the project. Default  = us-west1
 
-5. Run the command below to deploy the API on each instance
+4. Run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
 
-6. After running last step, there should a url provided you can test. Please run that url in your browser
+5. After running last step, there should a url provided you can test. Please run that url in your browser
 
-7. If everything looks good, you can use `terraform destroy` to tear down the infrastructure
+6. If everything looks good, you can use a command like `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76bd8d.json` to tear down the infrastructure.
 
 ## Troubleshooting
 
