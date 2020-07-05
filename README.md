@@ -20,12 +20,15 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 4. If this is your first time, you may also need to login and authorize google SDK <> terraform communication. To do this, install the Google SDK via the instructions here: https://cloud.google.com/sdk/docs/quickstart-macos and then login using this command: `gcloud auth application-default login`
 
 ### Running the Repo
-1. Clone the repo
+1. Clone the repo and cd into the folder.
 
-2. If this is your first time, run `terraform init` to download the load balancer module. 
+2. If this is your first time, run `terraform init` to download the load balancer module. If this works, you should see a new `.terraform` folder.
 
 3. Run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
+
 `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
+
+Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
 
 ---
 Parameters:
