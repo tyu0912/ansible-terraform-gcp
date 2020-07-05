@@ -27,6 +27,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 3. Run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
 `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
 
+---
 Parameters:
 1) -u string of any username to use for the instances.
 2) -p string of the path of the public key
@@ -36,6 +37,7 @@ Parameters:
 6) -n integer of instances to make. Default = 2
 7) -z string of the zone of the project. Default = us-west1-b
 8) -r string of the region of the project. Default  = us-west1
+---
 
 4. Run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
