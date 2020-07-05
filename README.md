@@ -6,6 +6,8 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 
 1. Install Terraform and Ansible using Homebrew `brew install terraform ansible`
 
+2. On GCP, if you don't have a project, create one according to here: https://cloud.google.com/resource-manager/docs/creating-managing-projects. If you have a project and want to use it here. That's fine as well.
+
 2. Create a GCP service key json file and store it in an appropriate location. You can follow these steps: https://cloud.google.com/iam/docs/creating-managing-service-account-keys
 
 3. Run the command below to deploy the infrastructure stack:
@@ -15,8 +17,11 @@ Parameters:
 1) -u string of the username to use for the instances
 2) -p string of the path of the public key
 3) -q string of the path of the private key
-4) -c string of the path of json file in step 2
-5) -i optional parameter of the number of instances to make
+4) -c string of the path of json credentials file
+5) -i string of the project id to spin up the cluster
+6) -n integer of instances to make. Default = 2
+7) -z string of the zone of the project. Default = us-west1-b
+8) -r string of the region of the project. Default  = us-west1
 
 4. Run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
