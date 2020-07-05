@@ -32,9 +32,10 @@ Parameters:
 
 ## Troubleshooting
 
-- It may be necessary to enable some GPC APIs. For example: Enable Computer Engine API: https://console.developers.google.com/apis/library/compute.googleapis.com?pli=1
+- It may be necessary to enable some GPC APIs. Ex: `Error: Error creating GlobalAddress: googleapi: Error 403: Compute Engine API has not been used`. In this case enable Compute Engine API: https://console.developers.google.com/apis/library/compute.googleapis.com?pli=1
 - Running ansible might trigger host checking `Are you sure you want to continue connecting`. It has been rarely observed that this blocks the process. If so, stop the process, ssh into the instance separately and then try running the step again.
 - Running ansible, also rarely observed error installing package ` FAILED! => {"changed": false, "cmd": "apt-get install --no-install-recommends python-apt...`. There are retries set but if this blocks, just rerun the step.
+- May get error like `Error: google: could not find default credentials.`. If this happens, run this: `gcloud auth application-default login`
 
 ## Resources Used:
 1. https://learn.hashicorp.com/terraform/gcp/build

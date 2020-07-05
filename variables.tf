@@ -1,8 +1,11 @@
 variable "project" {
     type = string
+    default = "ansible-terraform-282015"
 }
 
 variable "credentials_file" {
+    type = string
+    default = "ansible-terraform-282015-f4561a76bd8d.json"
 }
 
 variable "region" {
@@ -11,10 +14,6 @@ variable "region" {
 
 variable "zone" {
     default = "us-west1-b"
-}
-
-variable "cidrs" {
-    default = []
 }
 
 variable "environment" {
