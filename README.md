@@ -10,7 +10,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 
 3. Create a GCP service key json file and store it in an appropriate location. You can follow these steps: https://cloud.google.com/iam/docs/creating-managing-service-account-keys
 
-4. Run the command below to deploy the infrastructure stack:
+4. Clone the repo and run the command below to deploy the infrastructure stack:
 `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c "ansible-terraform-282015-f4561a76bd8d.json" -n 3 -i ansible-terraform-282015`
 
 Parameters:
