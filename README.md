@@ -1,6 +1,6 @@
 # Spinning up a Load Balanced API With Terraform and Ansible on GCP
 
-This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is firstly used to set up the infrastructure. Ansible will then install Docker, pull an image of the API, then create a container for it. 
+This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is firstly used to set up the infrastructure which includes _n_ instances, network configurations, and a load balancer. Ansible will then install Docker, pull an image of the API, then create containers for it on each instance. 
 
 ## Steps:
 
