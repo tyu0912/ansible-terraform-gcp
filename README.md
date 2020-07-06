@@ -29,6 +29,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 3. From the base directory of the repo, run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
 
 Cmd: `bash 1_run_terraform.sh -u <username> -p <public_key_path> -q <private_key_path> -c <service_account_credential_file> -i <project_id>`
+
 Ex: `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
 
 Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
@@ -53,6 +54,7 @@ Parameters:
 6. If everything looks good, you can use the command below to tear down the infrastructure.
 
 Cmd: `terraform destroy -var "credentials_file=<credential_file>"`
+
 Ex: `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76bd8d.json"`
 
 ## Troubleshooting
