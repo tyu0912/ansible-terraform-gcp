@@ -44,14 +44,13 @@ Parameters:
 8) -r string of the region of the project. Default  = us-west1
 ---
 
-4. From the base directory of the repo, run the command below to deploy the API on each instance
-`bash 2_run_ansible.sh`
+4. From the base directory of the repo, run the following command to deploy the API on each instance: `bash 2_run_ansible.sh`
 
 5. After running last step, there should be a url provided you can use to test. Please run that url in your browser
 
 6. If everything looks good, you can use the command below to tear down the infrastructure.
 
-Cmd: `terraform destroy -var "credentials_file=<credential_file>"`
+Cmd: `terraform destroy -var "credentials_file=<service_account_credential_file>"`
 
 Ex: `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76bd8d.json"`
 
