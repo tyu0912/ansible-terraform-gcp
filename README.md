@@ -8,7 +8,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 1. Install Terraform and Ansible using Homebrew `brew install terraform ansible`
 
 ### Getting SSH Keys:
-1. If you don't have any, you can use `ssh-keygen` to generate a public/private key pair. 
+1. If you don't have any, you can use `ssh-keygen` to generate a public/private key pair. No password is required. Can just hit <enter> when it asks. 
 
 ### Configuring Google Cloud Platform (GCP)
 1. Go to https://console.cloud.google.com/
@@ -24,11 +24,12 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 ### Running the Repo
 1. Clone the repo and `cd` into the folder.
 
-2. If this is your first time, run `terraform init` to download the load balancer module. If this works, you should see a new `.terraform` folder.
+2. If this is your first time, run `terraform init` to download the load balancer module. If this works, you should see a new `.terraform` folder. Can check by running `ls -la`. No need to go into it. 
 
-3. Run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
+3. From the base directory of the repo, run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
 
-`bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
+Cmd: `bash 1_run_terraform.sh -u <username> -p <public_key_path> -q <private_key_path> -c <service_account_credential_file> -i <project_id>`
+Ex: `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
 
 Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
 
@@ -44,12 +45,15 @@ Parameters:
 8) -r string of the region of the project. Default  = us-west1
 ---
 
-4. Run the command below to deploy the API on each instance
+4. From the base directory of the repo, run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
 
-5. After running last step, there should a url provided you can test. Please run that url in your browser
+5. After running last step, there should be a url provided you can use to test. Please run that url in your browser
 
-6. If everything looks good, you can use a command like `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76bd8d.json` to tear down the infrastructure.
+6. If everything looks good, you can use the command below to tear down the infrastructure.
+
+Cmd: `terraform destroy -var "credentials_file=<credential_file>"`
+Ex: `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76bd8d.json"`
 
 ## Troubleshooting
 
