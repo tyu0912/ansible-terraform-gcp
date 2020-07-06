@@ -26,7 +26,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 
 2. If this is your first time, run `terraform init` to download the load balancer module. If this works, you should see a new `.terraform` folder. Can check by running `ls -la`. No need to go into it. 
 
-3. From the base directory of the repo, run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. 
+3. From the base directory of the repo, run a command similar to the below to deploy the infrastructure stack. Note that fields below are necessary and that -p, -q, -c and -i values were obtained in steps in prior sections. Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
 
 Cmd: `bash 1_run_terraform.sh -u <username> -p <public_key_path> -q <private_key_path> -c <service_account_credential_file> -i <project_id>`
 
@@ -43,9 +43,6 @@ Parameters:
 7) -z string of the zone of the project. Default = us-west1-b
 8) -r string of the region of the project. Default  = us-west1
 ---
-
-Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
-
 
 4. From the base directory of the repo, run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
