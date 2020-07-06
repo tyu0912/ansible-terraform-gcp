@@ -20,7 +20,7 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 4. If this is your first time, you may also need to login and authorize google SDK <> terraform communication. To do this, install the Google SDK via the instructions here: https://cloud.google.com/sdk/docs/quickstart-macos and then login using this command: `gcloud auth application-default login`
 
 ### Running the Repo
-1. Clone the repo and cd into the folder.
+1. Clone the repo and `cd` into the folder.
 
 2. If this is your first time, run `terraform init` to download the load balancer module. If this works, you should see a new `.terraform` folder.
 
