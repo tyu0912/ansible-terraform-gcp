@@ -32,8 +32,6 @@ Cmd: `bash 1_run_terraform.sh -u <username> -p <public_key_path> -q <private_key
 
 Ex: `bash 1_run_terraform.sh -u tennisonyu -p ~/.ssh/id_rsa.pub -q ~/.ssh/id_rsa -c ansible-terraform-282015-f4561a76bd8d.json -i ansible-terraform-282015`
 
-Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
-
 ---
 Parameters:
 1) -u string of any username to use for the instances.
@@ -45,6 +43,9 @@ Parameters:
 7) -z string of the zone of the project. Default = us-west1-b
 8) -r string of the region of the project. Default  = us-west1
 ---
+
+Once complete, there should be IPs that are printed. You can verify that it matches the VMs created on GCP. You can also verify that a VM group and a Load Balancer are created on their respective pages. Also important to confirm is that the `ansible/hosts/hosts.ini` file has matching IP addresses. 
+
 
 4. From the base directory of the repo, run the command below to deploy the API on each instance
 `bash 2_run_ansible.sh`
