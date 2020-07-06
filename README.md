@@ -60,6 +60,7 @@ Ex: `terraform destroy -var "credentials_file=ansible-terraform-282015-f4561a76b
 - Running ansible might trigger host checking `Are you sure you want to continue connecting`. It has been rarely observed that this blocks the process. If so, stop the process, ssh into the instance separately and then try running the step again.
 - Running ansible, also rarely observed error installing package ` FAILED! => {"changed": false, "cmd": "apt-get install --no-install-recommends python-apt...`. There are retries set but if this blocks, just rerun the step.
 - May get error like `Error: google: could not find default credentials.`. If this happens, run this: `gcloud auth application-default login`
+- If you see an ssh password request during the ansible step, recreate your ssh key without a password and then recreate the instances again. 
 
 ## Resources Used:
 1. https://learn.hashicorp.com/terraform/gcp/build
