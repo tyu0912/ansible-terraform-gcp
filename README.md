@@ -46,7 +46,7 @@ Parameters:
 
 4. From the base directory of the repo, run the following command to deploy the API on each instance: `bash 2_run_ansible.sh`
 
-5. After running last step, there should be a url provided you can use to test. Please run that url in your browser
+5. After running last step, there should be a url provided you can use to test. Please run that url in your browser. You should see a message like "Welcome to Tennison's attempt..."
 
 6. If everything looks good, you can use the command below to tear down the infrastructure.
 
