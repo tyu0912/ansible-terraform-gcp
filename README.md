@@ -17,9 +17,9 @@ This repo employs Terraform and Ansible to deploy an API onto GCP. Terraform is 
 
 3. Create a GCP service key json file and store it in an appropriate location. To do this, on the hamburger menu in the top left of the header, select "IAM & Accounts" then go to "Service Accounts" in the left menu. Once there, click on "Create  Service Account". On the second step, either a _Owner_ or _Editor_ role should suffice. The third step can be skipped. Once the account is created, please create the JSON key under the "Action" menu in the table. Note that the final file downloaded is important for next steps. More details can be found here: https://cloud.google.com/iam/docs/creating-managing-service-account-keys
 
-4. If this is your first time, it will also be necessary to enable the Compute Engine API. Go to https://console.cloud.google.com/apis/library/compute.googleapis.com?q=Compute%20E&id=a08439d8-80d6-43f1-af2e-6878251f018d and click Enable
+4. If this is your first time, it will also be necessary to enable the Compute Engine API. Go to https://console.cloud.google.com/apis/library/compute.googleapis.com?q=Compute%20E&id=a08439d8-80d6-43f1-af2e-6878251f018d and click Enable. This may take a minute. If done, it will take you to a new page.
 
-5. If this is your first time, you may also need to login and authorize google SDK <> terraform communication. To do this, install the Google SDK via the instructions here: https://cloud.google.com/sdk/docs/quickstart-macos and then login using this command: `gcloud auth application-default login`
+5. If this is your first time, you may also need to login and authorize google SDK <> terraform communication. To do this, install the Google SDK via the instructions here: https://cloud.google.com/sdk/docs/quickstart-macos (`Before you begin` part) and then login using this command: `gcloud auth application-default login`. If done, you should see lines indicating new credential files being added to your system.  
 
 ### Running the Repo
 1. Clone the repo and `cd` into the folder.
